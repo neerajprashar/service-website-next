@@ -40,3 +40,45 @@ a {
     color-scheme: dark;
   }
 }
+
+.hero-section {
+  height: 80vh; /* Adjust height as needed */
+  background: url("/slider.jpg") center/cover no-repeat;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 700px;
+  text-align: center;
+}
+.why-choose-us-boxes {
+  min-height: 215px;
+}
+
+.service-boxes {
+  min-height: 375px;
+}
+
+.serviceCard {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  height: 230px;
+}
