@@ -1,6 +1,8 @@
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -21,7 +23,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${robotoMono.variable}`}>
+        <header className="bg-light">
+          <div className="container">
+            <Header />
+          </div>
+        </header>
+        
         {children}
+
+        <Footer />
+
       </body>
     </html>
   );

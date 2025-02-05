@@ -11,11 +11,7 @@ import CallToAction from "@/components/CallToAction";
 export default function Home() {
   return (
     <>
-    <header className="bg-light">
-      <div className="container">
-        <Header />
-      </div>
-    </header>
+ 
     <main>
       <div className="container-fluid px-0">
         <Hero />
